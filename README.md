@@ -23,7 +23,7 @@ A cross-platform Flutter application built with **Clean Architecture**,
 The project follows **Clean Architecture + Bloc** for scalable, testable, maintainable code.
 ![image](https://github.com/user-attachments/assets/b4a2d07a-c7a1-487a-aecd-a1a406d234fa)
 
-.
+'''
 ├── app.dart
 ├── app_providers.dart
 ├── core
@@ -68,17 +68,19 @@ The project follows **Clean Architecture + Bloc** for scalable, testable, mainta
 │   └── home
 │       └── presentation
 └── main.dart
-
+'''
 
 ---
 # Screenshots 
-![photo_2025-11-22 01 56 53](https://github.com/user-attachments/assets/840a086a-6762-48ee-ac46-415e34a72bcc)
-![photo_2025-11-22 01 56 52](https://github.com/user-attachments/assets/31fef7ce-3816-455d-a9f0-fe94e7051540)
-![photo_2025-11-22 01 56 51](https://github.com/user-attachments/assets/f33ff433-a5b4-4c01-8577-857b03822ef8)
-![photo_2025-11-22 01 56 50](https://github.com/user-attachments/assets/b32b6daa-4711-4422-9e8a-51616d42d534)
-![photo_2025-11-22 01 56 48](https://github.com/user-attachments/assets/48628cc6-3aba-48dc-a31c-5bf79fadf039)
-![photo_2025-11-22 01 56 47](https://github.com/user-attachments/assets/d33ff136-fdd3-4948-b2d6-887cfd2a7f9a)
-![photo_2025-11-22 01 56 42](https://github.com/user-attachments/assets/0399d930-35d9-4031-ac95-73cc6d194ae9)
+![photo_2025-11-22 01 57 13](https://github.com/user-attachments/assets/bb6e6303-44aa-47b4-9218-d140f506d242)
+![photo_2025-11-22 01 56 53](https://github.com/user-attachments/assets/6f73c21a-5a5c-453e-aedf-e65c67c4b6be)
+![photo_2025-11-22 01 56 52](https://github.com/user-attachments/assets/6cf10597-726b-4521-a2b3-2c034489be72)
+![photo_2025-11-22 01 56 51](https://github.com/user-attachments/assets/8727b462-b11a-44cc-8975-c3a8cf7c4c38)
+![photo_2025-11-22 01 56 50](https://github.com/user-attachments/assets/6550739e-a37a-421b-b024-5150e601be5d)
+![photo_2025-11-22 01 56 48](https://github.com/user-attachments/assets/5867227f-8509-4a60-8758-5f0f778ef03f)
+![photo_2025-11-22 01 56 47](https://github.com/user-attachments/assets/cc60eb62-1325-4980-8d17-d90368c1503b)
+![photo_2025-11-22 01 56 42](https://github.com/user-attachments/assets/28278f95-14c3-4864-acbb-2c5d58e0fa64)
+
 
 ---
 
