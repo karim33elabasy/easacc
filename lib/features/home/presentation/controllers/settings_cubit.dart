@@ -4,7 +4,6 @@ import 'package:easacc/features/home/presentation/controllers/settings_states.da
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_blue_plus/flutter_blue_plus.dart';
 import 'package:permission_handler/permission_handler.dart';
-import 'package:shared_preferences/shared_preferences.dart';
 
 class SettingsCubit extends Cubit<SettingsState> {
   StreamSubscription<List<ScanResult>>? _scanSubscription;

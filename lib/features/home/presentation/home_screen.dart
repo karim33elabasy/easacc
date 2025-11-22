@@ -28,8 +28,6 @@ class _HomeScreenState extends State<HomeScreen> {
         final url = state.url.isNotEmpty == true
             ? state.url
             : "https://www.google.com";
-        print('/'*50);
-        print(url);
         return AppScaffold(
           drawer: SideMenu(),
           appBar: HomeAppBar(),
