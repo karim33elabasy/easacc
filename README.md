@@ -1,24 +1,23 @@
 # Easacc Mobile Application  
 A cross-platform Flutter application built with **Clean Architecture**,  
 **Bloc/Cubit State Management**, **Supabase Authentication**, and  
-**Bluetooth + WiFi scanning** for printer device discovery.
+**Bluetooth canning** for device discovery.
 
 ---
 
-## 🚀 Features
+## Features
 
-- 🔐 Google Authentication (OAuth)
-- 🔵 Facebook Authentication (OAuth)
-- 🌐 WebView with dynamic URL (editable from settings)
-- 🔵 Bluetooth Device Scanning (Printer Discovery)
-- 📶 WiFi Network Scanning
-- ⚙️ Settings with persistent storage (SharedPreferences)
-- 🌗 Full Light + Dark mode support
-- 💎 Clean Architecture (Domain, Data, Presentation layers)
+- Google Authentication (OAuth)
+- Facebook Authentication (OAuth)
+- WebView with dynamic URL (editable from settings)
+- Bluetooth Device Scanning (Printer Discovery)
+- Settings with persistent storage (SharedPreferences)
+- Full Light + Dark mode support
+- Clean Architecture (Domain, Data, Presentation layers)
 
 ---
 
-# 🏛 Architecture Overview
+# Architecture Overview
 
 The project follows **Clean Architecture + Bloc** for scalable, testable, maintainable code.
 ![image](https://github.com/user-attachments/assets/b4a2d07a-c7a1-487a-aecd-a1a406d234fa)
@@ -71,23 +70,26 @@ The project follows **Clean Architecture + Bloc** for scalable, testable, mainta
 ```
 
 ---
-# Screenshots 
+# Screenshots
+
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/28278f95-14c3-4864-acbb-2c5d58e0fa64" width="300" />
-  <img src="https://github.com/user-attachments/assets/cc60eb62-1325-4980-8d17-d90368c1503b" width="300" />
-  <img src="https://github.com/user-attachments/assets/5867227f-8509-4a60-8758-5f0f778ef03f" width="300" />
-  <img src="https://github.com/user-attachments/assets/6550739e-a37a-421b-b024-5150e601be5d" width="300" />
-  <img src="https://github.com/user-attachments/assets/8727b462-b11a-44cc-8975-c3a8cf7c4c38" width="300" />
-  <img src="https://github.com/user-attachments/assets/6cf10597-726b-4521-a2b3-2c034489be72" width="300" />
-  <img src="https://github.com/user-attachments/assets/6f73c21a-5a5c-453e-aedf-e65c67c4b6be" width="300" />
-  <img src="https://github.com/user-attachments/assets/bb6e6303-44aa-47b4-9218-d140f506d242" width="300" />
+  <img src="https://github.com/user-attachments/assets/28278f95-14c3-4864-acbb-2c5d58e0fa64" width="300" style="margin: 10px;" />
+  <img src="https://github.com/user-attachments/assets/cc60eb62-1325-4980-8d17-d90368c1503b" width="300" style="margin: 10px;" />
+  <img src="https://github.com/user-attachments/assets/d5d8463c-1dc0-463a-9f25-80f5b9cf4839" width="300" style="margin: 10px;" />
+  <img src="https://github.com/user-attachments/assets/5f0d3b2d-f8d3-47d1-b66b-43ff0492b8ca" width="300" style="margin: 10px;" />
+  <img src="https://github.com/user-attachments/assets/5867227f-8509-4a60-8758-5f0f778ef03f" width="300" style="margin: 10px;" />
+  <img src="https://github.com/user-attachments/assets/6550739e-a37a-421b-b024-5150e601be5d" width="300" style="margin: 10px;" />
+  <img src="https://github.com/user-attachments/assets/8727b462-b11a-44cc-8975-c3a8cf7c4c38" width="300" style="margin: 10px;" />
+  <img src="https://github.com/user-attachments/assets/6cf10597-726b-4521-a2b3-2c034489be72" width="300" style="margin: 10px;" />
+  <img src="https://github.com/user-attachments/assets/6f73c21a-5a5c-453e-aedf-e65c67c4b6be" width="300" style="margin: 10px;" />
+  <img src="https://github.com/user-attachments/assets/bb6e6303-44aa-47b4-9218-d140f506d242" width="300" style="margin: 10px;" />
 </p>
 
 
 
 ---
 
-# 🧱 Clean Architecture Layers
+# Clean Architecture Layers
 
 ### **1. Data Layer**
 - `datasources/` → Supabase Auth Data Source  
@@ -101,13 +103,13 @@ The project follows **Clean Architecture + Bloc** for scalable, testable, mainta
 
 ### **3. Presentation Layer**
 - `bloc/` for authentication  
-- `cubit/` for settings (URL, scanning Bluetooth, scanning WiFi)  
+- `cubit/` for settings (URL, scanning Bluetooth)  
 - `widgets/` → modular components  
 - `screens/` → UI screens
 
 ---
 
-# 🔐 Authentication Flow (Google + Facebook using Supabase OAuth)
+# Authentication Flow (Google + Facebook using Supabase OAuth)
 
 The app uses Supabase OAuth with deep-link redirection:
 
@@ -120,20 +122,16 @@ auth.onAuthStateChange emits "signedIn" →
 AuthBloc emits LoggedInAuthState →
 Navigate to HomeScreen
 
-markdown
-Copy code
 
-📎 **Deep Link Example**
+**Deep Link Example**
 com.karimelabasy.easacc://login-callback/
 
-yaml
-Copy code
 
 ---
 
-# 📲 User Flows
+# User Flows
 
-## 1️⃣ Authentication Flow
+## Authentication Flow
 
 Auth Screen
 ├── Google Login
@@ -147,35 +145,28 @@ AuthBloc detects signedIn
 ↓
 Home Screen
 
-yaml
-Copy code
 
 ---
 
-## 2️⃣ Home Screen Flow
+## Home Screen Flow
 
 Home Screen
 └── WebView (loads saved URL)
 
-yaml
-Copy code
 
 ---
 
-## 3️⃣ Settings Flow
+## Settings Flow
 
 Settings Screen
 ├── Edit WebView URL
 ├── Scan Bluetooth Devices (Printers)
-├── Scan WiFi Networks
 └── Select Preferred Devices
 
-yaml
-Copy code
 
 ---
 
-# 🔵 Bluetooth Scanning
+# Bluetooth Scanning
 
 ### State fields:
 
@@ -194,35 +185,10 @@ Stream scanResults →
 Update Cubit State →
 Stop scan after timeout
 
-yaml
-Copy code
 
 ---
 
-# 📶 WiFi Scanning
-
-### State fields:
-
-isScanningWifi
-wifiNetworks
-selectedWifi
-
-
-### Flow:
-
-Scan WiFi →
-Request Permission →
-wifi_scan.startScan() →
-getScannedResults() →
-Emit updated state →
-User selects preferred network
-
-yaml
-Copy code
-
----
-
-# 🌗 Dark Mode / Light Mode
+# Dark Mode / Light Mode
 
 This project supports full dynamic theming using:
 
@@ -230,8 +196,6 @@ ThemeMode.system
 ThemeMode.dark
 ThemeMode.light
 
-yaml
-Copy code
 
 ---
 
@@ -242,14 +206,14 @@ Copy code
 | State Management | Bloc / Cubit |
 | Authentication | Supabase OAuth |
 | Storage | SharedPreferences |
-| Device Discovery | FlutterBluePlus + wifi_scan |
+| Device Discovery | FlutterBluePlus |
 | UI Framework | Flutter |
 | Architecture | Clean Architecture |
 | Deep Linking | Android Intent Filters / iOS URL Schemes |
 
 ---
 
-# ✔ Getting Started
+# Getting Started
 
 ### Install dependencies:
 flutter pub get
@@ -261,12 +225,12 @@ flutter run
 
 ---
 
-# 🤝 Contributing
+# Contributing
 
 Pull requests and feature suggestions are welcome.
 
 ---
 
-# 📄 License
+# License
 
 MIT License © 2025 Karim Elabasy
