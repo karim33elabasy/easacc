@@ -13,7 +13,6 @@ class AppIconButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       width: double.infinity,
-      margin: EdgeInsets.symmetric(horizontal: 20),
       padding: EdgeInsets.symmetric(
         horizontal: 15,
         vertical: 8

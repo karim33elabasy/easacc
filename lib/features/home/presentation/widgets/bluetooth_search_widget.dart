@@ -21,7 +21,7 @@ class BluetoothSearchWidget extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         const Text(
-          "Select Printer (Bluetooth)",
+          "Select Bluetooth Device",
           style: TextStyle(fontWeight: FontWeight.bold),
         ),
         const SizedBox(height: 10),

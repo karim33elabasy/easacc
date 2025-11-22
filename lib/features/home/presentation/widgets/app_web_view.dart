@@ -22,7 +22,17 @@ class _AppWebViewState extends State<AppWebView> {
   }
 
   @override
+  void didUpdateWidget(covariant AppWebView oldWidget) {
+    super.didUpdateWidget(oldWidget);
+
+    // 🔥 Reload only when the URL changes
+    if (oldWidget.url != widget.url) {
+      _controller.loadRequest(Uri.parse(widget.url));
+    }
+  }
+
+  @override
   Widget build(BuildContext context) {
-    return WebViewWidget(controller: _controller);  // ✔ Works now
+    return WebViewWidget(controller: _controller);
   }
 }

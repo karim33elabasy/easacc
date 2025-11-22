@@ -1,3 +1,4 @@
+import 'package:easacc/features/home/presentation/controllers/settings_cubit.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:easacc/core/utils/services_locator.dart';
@@ -12,6 +13,7 @@ class AppProviders extends StatelessWidget {
     return MultiBlocProvider(
       providers: [
         BlocProvider(create: (context)=> AuthBloc(googleLoginUseCase: getIt(), facebookLoginUseCase: getIt(), supabaseClient: getIt()),),
+        BlocProvider(create: (context)=> SettingsCubit(),),
       ],
       child: App(),
     );

@@ -12,28 +12,31 @@ class AuthActionButtons extends StatelessWidget {
   Widget build(BuildContext context) {
     return BlocBuilder<AuthBloc,AuthState>(
       builder: (context,state){
-      return Column(
-        children: [
-          AppIconButton(
-            text: "Continue With Google",
-            icon: Icons.g_mobiledata_outlined,
-            onPressed: () {
-              context.read<AuthBloc>().add(GoogleLoginAuthEvent());
-            },
-            isLoading: state is LoadingGoogleAuthState,
-          ),
-          SizedBox(height: 20,),
-          AppIconButton(
-            text: "Continue With Facebook",
-            icon: Icons.facebook,
-            color: Colors.blueAccent,
-            textColor: Colors.white,
-            onPressed: () {
-              context.read<AuthBloc>().add(FacebookLoginAuthEvent());
-            },
-            isLoading: state is LoadingFacebookAuthState,
-          ),
-        ],
+      return Padding(
+        padding: const EdgeInsets.symmetric(horizontal: 20),
+        child: Column(
+          children: [
+            AppIconButton(
+              text: "Continue With Google",
+              icon: Icons.g_mobiledata_outlined,
+              onPressed: () {
+                context.read<AuthBloc>().add(GoogleLoginAuthEvent());
+              },
+              isLoading: state is LoadingGoogleAuthState,
+            ),
+            SizedBox(height: 20,),
+            AppIconButton(
+              text: "Continue With Facebook",
+              icon: Icons.facebook,
+              color: Colors.blueAccent,
+              textColor: Colors.white,
+              onPressed: () {
+                context.read<AuthBloc>().add(FacebookLoginAuthEvent());
+              },
+              isLoading: state is LoadingFacebookAuthState,
+            ),
+          ],
+        ),
       );
       },
     );
