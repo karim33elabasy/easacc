@@ -73,14 +73,14 @@ The project follows **Clean Architecture + Bloc** for scalable, testable, mainta
 ---
 # Screenshots 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/bb6e6303-44aa-47b4-9218-d140f506d242" width="300" />
-  <img src="https://github.com/user-attachments/assets/6f73c21a-5a5c-453e-aedf-e65c67c4b6be" width="300" />
-  <img src="https://github.com/user-attachments/assets/6cf10597-726b-4521-a2b3-2c034489be72" width="300" />
-  <img src="https://github.com/user-attachments/assets/8727b462-b11a-44cc-8975-c3a8cf7c4c38" width="300" />
-  <img src="https://github.com/user-attachments/assets/6550739e-a37a-421b-b024-5150e601be5d" width="300" />
-  <img src="https://github.com/user-attachments/assets/5867227f-8509-4a60-8758-5f0f778ef03f" width="300" />
-  <img src="https://github.com/user-attachments/assets/cc60eb62-1325-4980-8d17-d90368c1503b" width="300" />
   <img src="https://github.com/user-attachments/assets/28278f95-14c3-4864-acbb-2c5d58e0fa64" width="300" />
+  <img src="https://github.com/user-attachments/assets/cc60eb62-1325-4980-8d17-d90368c1503b" width="300" />
+  <img src="https://github.com/user-attachments/assets/5867227f-8509-4a60-8758-5f0f778ef03f" width="300" />
+  <img src="https://github.com/user-attachments/assets/6550739e-a37a-421b-b024-5150e601be5d" width="300" />
+  <img src="https://github.com/user-attachments/assets/8727b462-b11a-44cc-8975-c3a8cf7c4c38" width="300" />
+  <img src="https://github.com/user-attachments/assets/6cf10597-726b-4521-a2b3-2c034489be72" width="300" />
+  <img src="https://github.com/user-attachments/assets/6f73c21a-5a5c-453e-aedf-e65c67c4b6be" width="300" />
+  <img src="https://github.com/user-attachments/assets/bb6e6303-44aa-47b4-9218-d140f506d242" width="300" />
 </p>
 
 
